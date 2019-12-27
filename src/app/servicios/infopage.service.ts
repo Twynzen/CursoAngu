@@ -1,11 +1,12 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { InfoWeb } from "../interfaces/info-web";
 
 @Injectable({
   providedIn: "root"
 })
 export class InfopageService {
-  info: any = {};
+  info: InfoWeb = {};
   cargada = false;
 
   constructor(private http: HttpClient) {
